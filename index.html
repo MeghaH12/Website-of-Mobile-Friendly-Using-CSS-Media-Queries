@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- VIEWPORT: Critical for responsive design - controls layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Complete Responsive Design Showcase</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">ResponsiveDesign</div>
+            <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">CSS Units & Media Queries</h1>
+            <p class="hero-subtitle">
+                A comprehensive demonstration of responsive web design using %, rem, vw, vh, 
+                CSS Grid, Flexbox, and advanced media queries for every screen size.
+            </p>
+            <a href="#features" class="cta-button">Explore Features</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <main class="main-content">
+            <div class="content-grid">
+                <article class="content-article">
+                    <h2 class="content-title">Advanced Responsive Techniques</h2>
+                    <p class="content-text">
+                        This page demonstrates every major responsive design concept: viewport meta tags, 
+                        flexible CSS units (%, rem, vw, vh, ch, fr), CSS Grid with auto-fit and minmax, 
+                        and comprehensive media queries for all device sizes.
+                    </p>
+                    <p class="content-text">
+                        Notice how typography scales smoothly using clamp(), layouts reorganize with 
+                        CSS Grid, and spacing remains consistent with rem units. The design adapts 
+                        from 320px mobile screens to 4K+ desktop displays.
+                    </p>
+                    <p class="content-text">
+                        Advanced features include orientation queries, high-DPI support, dark mode 
+                        detection, and motion preference respect for accessibility.
+                    </p>
+                </article>
+
+                <aside class="sidebar">
+                    <h3 class="sidebar-title">CSS Units Used</h3>
+                    <div class="sidebar-item">
+                        <strong>% (Percentage)</strong><br>
+                        Container widths, relative positioning
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>rem (Root EM)</strong><br>
+                        Font sizes, spacing, consistent scaling
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>vw/vh (Viewport)</strong><br>
+                        Full-width sections, hero heights
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>fr (Fractional)</strong><br>
+                        CSS Grid column distribution
+                    </div>
+                </aside>
+            </div>
+
+            <section class="stats-section">
+                <h2 class="content-title">Responsive Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Mobile Compatible</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Breakpoints</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">CSS Units</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Screen Sizes</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section class="features-section" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Viewport Meta Tag</h3>
+                <p class="feature-description">
+                    Properly configured viewport settings ensure correct rendering on all mobile devices
+                    with scale controls and responsive behavior.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📏</div>
+                <h3 class="feature-title">Flexible Units</h3>
+                <p class="feature-description">
+                    Uses %, rem, vw, vh, ch, and fr units throughout for true scalability 
+                    and consistent proportions across all screen sizes.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Media Queries</h3>
+                <p class="feature-description">
+                    Comprehensive breakpoint system from 320px to 1400px+ with orientation, 
+                    resolution, and preference-based queries.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">CSS Grid & Flexbox</h3>
+                <p class="feature-description">
+                    Modern layout systems with auto-fit, minmax, fractional units, 
+                    and flexible containers for any content.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Performance</h3>
+                <p class="feature-description">
+                    Optimized CSS with minimal overrides, efficient selectors, 
+                    and hardware-accelerated animations for smooth performance.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♿</div>
+                <h3 class="feature-title">Accessibility</h3>
+                <p class="feature-description">
+                    Respects user preferences for motion, color scheme, and contrast 
+                    with proper semantic markup and ARIA labels.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <p>&copy; 2024 Responsive Design Showcase. Built with advanced CSS techniques, 
+               media queries, and modern web standards.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
